@@ -1,13 +1,60 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.menu {
+  font-family: 'Arial', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  position: relative; /* Added position: relative */
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #eee;
+}
+
+.menu-icon {
+  margin-right: 5px;
+}
+
+.submenu {
+  padding-left: 20px;
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the submenu below its parent */
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  width: 150px;
 }
