@@ -17,6 +17,7 @@ function App() {
     { id: 3, title: 'Contact', icon: '✉️', subMenu: [] },
   ]
 
+  
   const [selectedItem, setSelectedItem] = useState(null);
 
   const handleClick = (menuItem) => {
